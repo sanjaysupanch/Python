@@ -48,9 +48,9 @@ if __name__=='__main__':
         (find_max_sub_array(li,0,len(li)-1))
         end=time.time()
         tim.append(end-strt)
-    print("No of Inputs       Time Taken")    
+    print("No of Inputs\t\t\tTime Taken")    
     for i in range(len(inputs)):    
-        print((inputs[i],'\t\t',tim[i]))
+        print((inputs[i],'\t\t\t' , tim[i]))
     plt.plot(inputs,tim)
     plt.xlabel("Number of Inputs");plt.ylabel("Time taken in seconds ")
     plt.show()
